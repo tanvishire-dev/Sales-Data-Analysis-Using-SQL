@@ -1,53 +1,67 @@
 # Sales Data Analysis Using SQL
 
-## Project Overview
-This project demonstrates how SQL can be used to organize customer and sales order data for business analysis. It uses a relational database with two tables: `customers` and `orders`.
+## 📌 Project Overview
+The Sales Data Analysis project uses SQL to explore customer orders, product performance, revenue, and sales trends. It demonstrates how relational database queries can transform raw sales records into useful business information.
 
-## Technologies Used
+## 🛠️ Technologies
 - SQL
-- Relational Database Management
-- Data Validation Constraints
-- Data Analysis Queries
+- MySQL
+- Relational Database Design
+- Data Quality Checks
+- Sales Reporting and Analysis
 
-## Database Structure
+## 🗄️ Database Structure
+**Database:** `sales_analysis`
 
-**1. Customers Table**
-- `customer_id` — Primary key
-- `customer_name` — Customer name
-- `city` — Customer city
+**Customers table**
+- `customer_id`
+- `customer_name`
+- `city`
 
-**2. Orders Table**
-- `order_id` — Primary key
-- `customer_id` — Foreign key referencing customers
-- `product_name` — Product name
-- `category` — Product category
-- `quantity` — Quantity ordered
-- `price` — Product price
-- `order_date` — Order date
+**Orders table**
+- `order_id`
+- `customer_id`
+- `product_name`
+- `category`
+- `quantity`
+- `price`
+- `order_date`
 
-## Key Features
-- Created a `sales_analysis` database.
-- Designed related customer and order tables.
-- Inserted sample customer and order data.
-- Implemented primary and foreign key constraints.
-- Added validation rules to prevent non-positive quantities and negative prices.
-- Prepared the database for customer, product, and sales analysis.
+The tables are connected through a foreign key relationship using `customer_id`.
 
-## Learning Outcomes
-- Understanding relational database design.
-- Practicing `CREATE DATABASE`, `CREATE TABLE`, and `INSERT INTO`.
-- Using primary keys and foreign keys.
-- Applying `CHECK` constraints.
-- Retrieving records using `SELECT` queries.
+## 🚀 Key Features
+- Created and populated relational database tables.
+- Applied primary keys, foreign keys, NOT NULL, and CHECK constraints.
+- Checked for missing values, duplicate order IDs, and invalid sales records.
+- Calculated total revenue, total orders, units sold, and average order value.
+- Analyzed product-wise and category-wise revenue.
+- Used INNER JOIN to combine customer and order information.
+- Identified high-revenue customers and compared city-wise sales.
+- Analyzed monthly revenue trends.
+- Applied GROUP BY, HAVING, CASE statements, and subqueries.
+- Created a reusable `sales_report` SQL view.
+- Queried the view to summarize revenue by city.
 
-## Future Improvements
-- Analyze sales by product category and month.
-- Calculate total sales and order quantities.
-- Identify top-selling products and high-value customers.
-- Add `JOIN`, `GROUP BY`, aggregate functions, and subqueries.
-- Perform data-quality checks and build business reports.
+## 📊 SQL Concepts Practiced
+`SELECT`, `WHERE`, `COUNT()`, `SUM()`, `AVG()`, `GROUP BY`, `ORDER BY`, `HAVING`, `INNER JOIN`, `CASE`, subqueries, constraints, and views.
 
-## Technologies: SQL | Relational Database Design | Data Validation
+## 🎯 Learning Outcomes
+- Improved understanding of relational database design.
+- Practiced data validation and data-quality checks.
+- Developed skills in aggregating and filtering business data.
+- Learned to create reusable SQL reporting views.
+- Practiced translating business questions into SQL queries.
 
+## 🔮 Future Improvements
+- Connect the SQL database to Power BI.
+- Create an interactive sales dashboard.
+- Add more realistic data and test additional edge cases.
+- Expand the analysis with profit margins, customer retention, and year-over-year comparisons.
 
-**Note:** This project currently contains sample data and initial table setup. Advanced sales analysis queries can be added as the next development step.
+## 👩‍💻 Author
+Tanvi Shire
+
+GitHub: https://github.com/tanvishire-dev
+
+**Note:** This project uses sample sales data for learning and portfolio demonstration.
+ysis queries can be added as the next development step.
