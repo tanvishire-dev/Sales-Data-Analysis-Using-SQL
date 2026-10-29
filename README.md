@@ -47,9 +47,7 @@ This project demonstrates how SQL can be used to organize customer and sales ord
 - Add `JOIN`, `GROUP BY`, aggregate functions, and subqueries.
 - Perform data-quality checks and build business reports.
 
-- Technologies: SQL | Relational Database Design | Data Validation
+## Technologies: SQL | Relational Database Design | Data Validation
 
-- Athor
- Tanvi shire
 
 **Note:** This project currently contains sample data and initial table setup. Advanced sales analysis queries can be added as the next development step.
